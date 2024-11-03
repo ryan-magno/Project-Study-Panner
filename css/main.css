@@ -1,0 +1,86 @@
+html,
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.container-items {
+    z-index: 1;
+    margin-top: 60px;
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#topbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-image: linear-gradient(
+        -225deg,
+        #33186b 0%,
+        #392467 50%,
+        #321575 100%    
+    );
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 0 20px 15px;
+    z-index: 99;
+}
+
+.btn-spacing {
+    margin: 0 5px;
+}
+
+.custom-tooltip-bs-red {
+    opacity: 1 !important;
+    --bs-tooltip-bg: #dc3545;
+    --bs-tooltip-color: #f8f9fa;
+}
+
+.custom-tooltip-bs-green {
+    opacity: 1 !important;
+    --bs-tooltip-bg: #198754;
+    --bs-tooltip-color: #f8f9fa;
+}
+
+.custom-tooltip-bs-blue {
+    opacity: 1 !important;
+    --bs-tooltip-bg: #0d6efd;
+    --bs-tooltip-color: #f8f9fa;
+}
+
+.custom-tooltip-bs-yellow {
+    opacity: 1 !important;
+    --bs-tooltip-bg: #ffc107;
+    --bs-tooltip-color: #000;
+}
+
+.custom-tooltip-bs-gray {
+    opacity: 1 !important;
+    --bs-tooltip-bg: #6c757d;
+    --bs-tooltip-color: #fff;
+}
+
+/* for action buttons margin */
+.btn-action {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card-radio {
+    max-width: 20rem;
+}
+
+table {
+    width: 100%;
+}

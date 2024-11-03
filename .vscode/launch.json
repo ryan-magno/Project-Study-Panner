@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "name": "PHP: Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": [
+                9003,
+                9000
+            ]
+        },
+        {
+            "name": "Launch current script in console",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "externalConsole": false,
+            "port": 9003
+        },
+        {
+            "name": "PHP: Launch built-in server",
+            "type": "php",
+            "request": "launch",
+            "runtimeArgs": [
+                "-S",
+                "localhost:8000",
+                "-t",
+                "."
+            ],
+            "port": 9003,
+            "serverReadyAction": {
+                "action": "openExternally"
+            }
+        },
+        {
+            "type": "vscode-edge-devtools.debug",
+            "request": "attach",
+            "name": "Attach to Microsoft Edge and open the Edge DevTools",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "name": "Node: Run Current File",
+            "request": "launch",
+            "program": "${workspaceFolder}/node/app.js"
+        }
+    ]
+}

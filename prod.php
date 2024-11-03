@@ -1,0 +1,3 @@
+<?php
+$isProduction = true;
+
